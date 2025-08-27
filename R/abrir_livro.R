@@ -2,7 +2,7 @@
 #'
 #' @name abrir_livro
 #'
-#' @description Abre livro com os comandos do curso
+#' @description Abre o livro que contém os comandos do curso
 #'
 #' @return O livro é aberto no navegador
 #'

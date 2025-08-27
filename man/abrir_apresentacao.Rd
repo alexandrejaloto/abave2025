@@ -7,10 +7,10 @@
 abrir_apresentacao()
 }
 \value{
-O arquivo é aberto no programa adequado.
+A apresentação é aberta em formato PDF no navegador
 }
 \description{
-Abre arquivo PPTX com a apresentação do curso
+Abre a apresentação do curso
 }
 \examples{
 abrir_apresentacao()

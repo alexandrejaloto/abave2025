@@ -2,9 +2,9 @@
 #'
 #' @name abrir_apresentacao
 #'
-#' @description Abre arquivo PPTX com a apresentação do curso
+#' @description Abre a apresentação do curso
 #'
-#' @return O arquivo é aberto no programa adequado.
+#' @return A apresentação é aberta em formato PDF no navegador
 #'
 #' @author Alexandre Jaloto
 #'
@@ -14,12 +14,9 @@
 
 abrir_apresentacao <- function() {
 
-  caminho_ppt <- system.file("tomando_medidas.pptx", package = "abave2025")
+  url <- "https://alexandrejaloto.github.io/abave2025/tomando_medidas.pdf"
 
+  utils::browseURL(url)
 
-  if (curso_path == "") {
-    stop("Material do curso não encontrado. Instale o pacote corretamente.")
-  }
-
-  file.show(caminho_ppt)
+  message("Material do curso aberto no navegador!")
 }

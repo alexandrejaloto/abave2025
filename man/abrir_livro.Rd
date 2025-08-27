@@ -10,7 +10,7 @@ abrir_livro()
 O livro é aberto no navegador
 }
 \description{
-Abre livro com os comandos do curso
+Abre o livro que contém os comandos do curso
 }
 \examples{
 abrir_livro()
