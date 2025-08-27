@@ -13,7 +13,7 @@
 #' @export
 
 abrir_livro <- function() {
-  curso_path <- system.file("comandos/index.html", package = "abave2025")
+  curso_path <- system.file("livro/index.html", package = "abave2025")
 
   if (curso_path == "") {
     stop("Material do curso não encontrado. Instale o pacote corretamente.")
