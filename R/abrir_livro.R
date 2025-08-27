@@ -13,12 +13,10 @@
 #' @export
 
 abrir_livro <- function() {
-  curso_path <- system.file("livro/index.html", package = "abave2025")
 
-  if (curso_path == "") {
-    stop("Material do curso não encontrado. Instale o pacote corretamente.")
-  }
+  url <- "https://alexandrejaloto.github.io/abave2025/"
 
-  utils::browseURL(curso_path)
+  utils::browseURL(url)
+
   message("Material do curso aberto no navegador!")
 }
