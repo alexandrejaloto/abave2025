@@ -1,0 +1,161 @@
+# Análise de itens politômicos
+
+```{r, echo=FALSE, include=FALSE}
+library(mirt)
+devtools::load_all()
+```
+
+## Preparação
+
+Importar banco
+
+```{r}
+data(banco.poli, package = 'abave2025')
+```
+
+Nome das variáveis do banco
+
+```{r}
+names(banco.poli)
+```
+
+São 10 itens.
+
+Confirmar as categorias dos itens
+
+```{r}
+table(banco.poli$Item_1)
+```
+
+Função apply para toda a tabela (quando usa 2, a função percorre cada coluna)
+
+```{r}
+apply(banco.poli[,-11], 2, table)
+```
+## Análise inicial
+
+### Calibração inicial
+
+Calibrar os itens no modelo de Samejima
+
+```{r}
+fit.graded <- mirt(data = banco.poli, model = 1, itemtype = 'graded')
+```
+
+Verificar os parâmetros dos itens
+
+```{r}
+coef(fit.graded, IRTpars = TRUE, simplify = TRUE)
+```
+
+Armazenar os parâmetros em um objeto
+
+```{r}
+pars <- data.frame(coef(fit.graded, IRTpars = TRUE, simplify = TRUE)$items)
+pars
+```
+
+### Gráficos
+
+Curva de informação do teste
+
+```{r}
+plot(fit.graded, type = 'info')
+```
+
+Confiabilidade do teste em função do escore
+
+```{r}
+plot(fit.graded, type = 'rxx')
+```
+
+Erro padrão de medida em função do escore
+
+```{r}
+plot(fit.graded, type = 'SE')
+```
+
+Informação do teste e erro padrão
+
+```{r}
+plot(fit.graded, type = 'infoSE')
+```
+
+Curva de informação de cada item
+
+```{r}
+plot(fit.graded, type = 'infotrace')
+```
+
+Curva característica de cada item
+
+```{r}
+plot(fit.graded, type = 'trace')
+```
+
+Gráficos de cada item
+
+```{r}
+itemplot(fit.graded, 1, 'info')
+itemplot(fit.graded, 1, 'SE')
+itemplot(fit.graded, 1, 'trace')
+itemplot(fit.graded, 1, 'infoSE')
+itemplot(fit.graded, 1, 'infotrace')
+```
+
+Conclusão: o Item_4 deve ser excluído.
+
+## Análise final
+
+### Calibração final
+
+Calirbar sem o Item_4
+
+```{r}
+fit.graded <- mirt(data = banco.poli[,-4], model = 1, itemtype = 'graded')
+```
+
+Verificar os parâmetros dos itens
+
+```{r}
+coef(fit.graded, IRTpars = TRUE, simplify = TRUE)
+```
+
+### Gráficos
+
+Curva de informação do teste
+
+```{r}
+plot(fit.graded, type = 'info')
+```
+
+Confiabilidade do teste em função do escore
+
+```{r}
+plot(fit.graded, type = 'rxx')
+```
+
+Erro padrão de medida em função do escore
+
+```{r}
+plot(fit.graded, type = 'SE')
+```
+
+Informação do teste e erro padrão
+
+```{r}
+plot(fit.graded, type = 'infoSE')
+```
+
+Curva de informação de cada item
+
+```{r}
+plot(fit.graded, type = 'infotrace')
+```
+
+Curva característica de cada item
+
+```{r}
+plot(fit.graded, type = 'trace')
+```
+

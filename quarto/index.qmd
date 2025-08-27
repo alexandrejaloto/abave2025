@@ -1,0 +1,16 @@
+# Introdução
+
+A XIII Reunião da Abave ocorreu entre os dias 8 e 10 de setembro de 2025. Este livro disponibiliza o material do minicurso Introdução à TRI, ministrado por Alexandre Jaloto.
+
+Para rodar os comandos você precisa carregar os pacotes usados
+
+```{r}
+library(mirt)
+```
+
+```{r, eval=FALSE}
+devtools::install_github('alexandrejaloto/abave2025)
+```
+
+Vamos trocar ideias sobre TRI e outros temas da área de medidas em educação?
+Contato: alexandre.jaloto@inep.gov.br

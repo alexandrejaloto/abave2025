@@ -1,0 +1,21 @@
+# Introdução
+
+A Coordenação de Medidas Psicométricas dos Exames (COMPEX) e a Coordenação de Medidas Psicométricas das Avaliações (COMPAV) integram a Coordenação-Geral de Medidas da Educação Básica (CGMEB). A COMPEX e a COMPAV são responsáveis pelas análises estatísticas e psicométricas dos instrumentos aplicados na Educação Básica, o que inclui testes de desempenho e questionários contextuais.
+
+## Objetivo
+
+Este livro oferece material para treinamento em serviço dos(as) integrantes da COMPEX e COMPAV. O objetivo é apresentar a rotina das análises psicométricas de forma aplicada. As análises envolvem manipulação de banco de dados, análise de instrumento baseada na Teoria Clássica dos Testes (TCT) e análise de instrumento baseada na Teoria de Resposta ao Item (TRI). Esta versão do livro contém a análise de três bancos de dados com e sem BIB Espera-se que o material seja constantemente ampliado e atualizado.
+
+## Competências prévias necessárias
+
+Espera-se que você seja capaz de manipular bancos de dados no R. Caso não tenha as competências necessárias para essa tarefa, existem cursos gratuitos e pagos. Além disso, os colegas costumam compartilhar seus conhecimentos sobre o R.
+
+Espera-se também que você domine os conceitos básicos da psicometria, especialmente relacionados à TCT, análise fatorial e TRI. Cursos gratuitos sobre a temática são mais difíceis, mas os colegas também costumam compartilhar seus conhecimentos sobre psicometria.
+
+## Estrutura do livro
+
+O livro apresenta as etapas para a análise de um banco de dados simulado. A cada etapa concluída, você deve verificar se os seus resultados estão iguais aos resultados esperados. Tanto o banco de dados quanto as funções para análises e verificação dos resultados estão no pacote `INEPsico`, disponível no Github.
+
+## Antes de começar
+
+Certifique-se de que você tem o RStudio instalado em sua máquina. Após isso, instale os seguintes pacotes: `mirt`, `devtools` e `INEPsico`. Para instalar o pacote `INEPsico`, use `devtools::install_github('alexandrejaloto/INEPsico)`.
