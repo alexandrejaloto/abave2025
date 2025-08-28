@@ -11,7 +11,14 @@ devtools::install_github("alexandrejaloto/abave2025")
 
 Para abrir o livro que contém os comandos apresentados no curso, use:
 abave2025::abrir_livro()
-O livro abrirá no seu navegador. Você também pode baixar 
+O livro abrirá no seu navegador.
 
-Para abrir a apresentação em arquivo PPTX, use:
+Para abrir a apresentação em PDF, use:
 abave2025::abrir_apresentacao()
+O material abrirá no seu navegador.
+
+## Contato
+
+Vamos trocar ideias sobre TRI e outros temas da área de medidas em educação?
+Contato: alexandre.jaloto@inep.gov.br
+
