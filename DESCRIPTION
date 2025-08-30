@@ -13,9 +13,10 @@ Depends:
     R (>= 3.5)
 LazyData: true
 Imports: 
-    INEPsico (>= 1.3),
     latticeExtra,
     mirt,
     utils
 URL: https://github.com/alexandrejaloto/abave2025
 BugReports: https://github.com/alexandrejaloto/abave2025/issues
+Remotes:  
+    alexandrejaloto/INEPsico
