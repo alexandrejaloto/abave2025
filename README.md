@@ -4,8 +4,7 @@ Pacote R com material do curso de Teoria de Resposta ao Item (TRI) da ABAVE 2025
 
 ## Instalar o pacote
 
-Instale via GitHub
-devtools::install_github("alexandrejaloto/abave2025")
+Instale via GitHub usando `devtools::install_github("alexandrejaloto/abave2025")`.
 
 ## Acessar o material
 
