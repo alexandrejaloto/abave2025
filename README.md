@@ -9,12 +9,12 @@ devtools::install_github("alexandrejaloto/abave2025")
 
 ## Acessar o material
 
-Para abrir o livro que contém os comandos apresentados no curso, use:
-abave2025::abrir_livro()
-O livro abrirá no seu navegador.
+Você precisa de acesso à internet para acessar o material.
 
-Para abrir a apresentação em PDF, use:
-abave2025::abrir_apresentacao()
+Para abrir o livro que contém os comandos apresentados no curso, use 
+`abave2025::abrir_livro()`. O livro abrirá no seu navegador.
+
+Para abrir a apresentação em PDF, use `abave2025::abrir_apresentacao()`. 
 O material abrirá no seu navegador.
 
 ## Contato
