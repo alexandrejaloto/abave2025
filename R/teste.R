@@ -19,8 +19,12 @@ teste <- function() {
   nzchar(find.package('mirt'))
   nzchar(find.package('latticeExtra'))
   nzchar(find.package('abave2025'))
+  nzchar(find.package('utils'))
 
+  data(banco.2pl, package = 'abave2025')
   fit.2pl <- mirt::mirt(data = banco.2pl[,-11], model = 1, itemtype = '2PL')
+
+  data.frame(latticeExtra::ancestry)
 
   if(exists('fit.2pl'))
   {
